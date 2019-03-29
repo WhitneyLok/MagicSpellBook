@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magic spell book...</title>
+        <style>.row {
+    display: flex;
+}
+
+.row > div {
+    flex: 0 1 50vw;
+    height: 100%;
+}
+
+
+.control {
+    cursor: pointer;
+}
+
+.unicorn2, .bunny, .sleep {
+    display: none;
+}
+.magician{
+ height:400px;
+ width:350px;
+}
+.magician2 , .bunny{
+ height:400px;
+ width:300px;
+}
+ .unicorn2, .unicorn{
+     height:220px;
+ }
+ body{
+     text-align:center;
+     background-image:url("https://media.giphy.com/media/3ohhwzIw3bISRhQWME/source.gif");
+     background-color: #ecf7f9;
+ }
+ h1{
+     border:10px white dotted;
+ }</style>
+    </head>
+    <body>
+    <h1> Click on the images...if you dare.</h1>
+    <img class="magician" src="https://www.fancydressball.co.uk/big_images1/adult-blue-magician-costume-ac676.jpg">
+    <h1>Transformation spell</h1>
+        <div class="row">
+        <div class="control">
+            <img class="unicorn" src="http://www.agr.gc.ca/resources/prod/img/discover-decouvrez/potatoes300x210.jpg">
+        </div>
+        <div class="control">
+            <img class="unicorn2" src="https://i.pinimg.com/474x/ff/19/44/ff1944ed2d175d799f0af207b0838470--rys-kawaii-potato.jpg">
+        </div>
+        </div>
+        <br>
+        <br>
+        <h1>Magic bunny act</h1>
+        <div class="row">
+        <div class="control">
+            <img class="magician2" src="https://i.pinimg.com/474x/97/ff/d2/97ffd21e2f62ee76396182fc6e279979--clipart-printables.jpg" >
+        </div>
+        <div>
+            <img class="bunny" src="https://www.warrenphotographic.co.uk/photography/bigs/18408-White-rabbit-in-a-top-hat-white-background.jpg">
+        </div>
+        </div>
+         <h1>Sleeping spell (With a little teleporting spell)</h1>
+        <div class="row">
+        <div class="control">
+            <img class="awake" src="https://i.pinimg.com/474x/ec/41/f6/ec41f6f1072f8a8ae96860ab5ebb3b89--tropical-birds-pretty-birds.jpg" >
+        </div>
+        <div class="control">
+            <img class="sleep" src="https://i.pinimg.com/474x/6b/3e/e3/6b3ee3c6ae6e7cabfefa7fb47a705b0c--pretty-birds-clipart.jpg">
+        </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>$(".unicorn,.unicorn2").click(function() {
+    $(".unicorn").fadeToggle();
+    $(".unicorn2").fadeToggle();
+});
+$(".magician2").click(function() {
+    $(".bunny").slideToggle();
+
+});
+$(".awake, .sleep").click(function() {
+    $(".sleep").toggle();
+    $(".awake").toggle();
+
+});
+
+
+
+</script>
+    </body>
+</html>
